@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+   /* background-color: #377dff;*/
+    background-image: url(/clockbg1.jpg);
+    background-repeat: no-repeat;
+    margin-right: 0;
+    width: 1620px;
+    height: 1080px;
+    /* align-items: last baseline; */
+    /*100vh,100vw */
+  }
+  .hide {
+    display: none;
+  }
+  .wrapper {
+    background-color:bisque;
+    width: 90%;
+    max-width: 27.25em;
+    padding: 3.12em 5em;
+    position:absolute;
+    left: 30%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5em;
+  }
+  .timer-display {
+    font-size: 2.18em;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+    padding: 10px 30px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+  }
+  .inputs input {
+    width: 2.8em;
+    font-size: 1.3em;
+    border: 1px solid #000000;
+    border-radius: 0.1em;
+    padding: 0.4em 0.2em;
+  }
+  .alarm input[type="checkbox"] {
+    appearance: none;
+    height: 2em;
+    width: 3.75em;
+    background-color: #12d23b;
+    border-radius: 1em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+  .alarm input[type="checkbox"]:before {
+    position: absolute;
+    content: "";
+    background-color: #757683;
+    height: 1.43em;
+    width: 1.43em;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+  }
+  .alarm input[type="checkbox"]:checked {
+    background-color: #d2e2ff;
+  }
+  .alarm input[type="checkbox"]:checked:before {
+    background-color: #377dff;
+    left: 2em;
+  }
+  #set {
+    background-color: #377dff;
+    border: none;
+    padding: 1em 2.2em;
+    display: block;
+    margin: 1.5em auto 0 auto;
+    border-radius: 0.2em;
+    color: #ffffff;
+  }
+  .alarm {
+    display: grid;
+    grid-template-columns: 8fr 2fr 2fr;
+    gap: 1em;
+    margin-top: 1.5em;
+    align-items: center;
+  }
+  .deleteButton {
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #377dff;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* #deleteButton{
+    background-color: #377dff;
+    border: none;
+    padding: .5em .8em;
+    align-items: center;
+    margin: 1.5em auto 0 auto;
+  } */
+  
